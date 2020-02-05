@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+}
+
+body{
+
+}
+
+header{
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    display: block;
+    background-size: 100%;
+    height: 200px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+}
+
+header h1{
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+header#home{
+    z-index: -1;
+    background-image: url("../img/homeheader.png");
+}
+
+#profilepic{
+    display: block;
+    height: 100px;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+svg.ikon{
+    fill: white;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.gridcontainer{
+    min-height: 75px;
+    display:grid;
+    grid-template-columns:repeat(5, 20%);
+    grid-template-rows: 100%;
+}
+.gridobject{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    border-width: 1px;
+    align-items: center;
+    line-height: 470%;
+    transition-duration: 200ms;
+    display:inline-block;
+}
+
+.gridobject.active{
+    background-color: white
+}
+
+.gridobject.active > .ikon {
+    fill: black;
+}
