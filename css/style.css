@@ -1,9 +1,14 @@
 *{
     margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
 }
 
 body{
-
+    min-height: 100vh;
+    background-color: rgb(238, 238, 238);
 }
 
 header{
@@ -14,21 +19,33 @@ header{
     height: 200px;
     background-position-y: center;
     background-repeat: no-repeat;
-    filter: blur(2px);
+    z-index: -1;
 }
 
 header h1{
-    text-align: center;
-    vertical-align: text-bottom;
+    position: absolute;
+    width:100%;
+    bottom:10%;
+    text-align:center;
 }
 
 header#home{
-    z-index: -1;
     background-image: url("../img/homeheader.png");
+}
+header#about{
+    background-image: url("../img/aboutheader.jpg");
+}
+header#portfolio{
+    background-image: url("../img/portfolioheader.jpg");
+}
+header#contact{
+    background-image: url("../img/contactheader.jpg");
+}
+header#shop{
+    background-image: url("../img/shopheader.jpg");
 }
 
 #profilepic{
-    display: block;
     height: 100px;
     position: absolute;
     top: 12%;
@@ -48,28 +65,184 @@ svg.ikon{
     margin: auto;
 }
 
-.gridcontainer{
+.navcontainer{
     min-height: 75px;
     display:grid;
     grid-template-columns:repeat(5, 20%);
     grid-template-rows: 100%;
 }
-.gridobject{
+.navobject{
     position: relative;
     align-content: center;
     text-align: center;
     background-color: rgb(34, 34, 34);
-    border-width: 1px;
+    border-style: solid;
+    border-width: 2px;
     align-items: center;
     line-height: 470%;
     transition-duration: 200ms;
     display:inline-block;
+    color:black;
 }
 
-.gridobject.active{
+.navobject.active{
     background-color: white
 }
 
-.gridobject.active > .ikon {
+.navobject.active > .ikon {
     fill: black;
+}
+
+divider{
+
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(8, 8, 8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    text-align:center;
+    margin: 5%;
+}
+
+#aboutimg{
+    max-width: 100%;
+}
+
+.gallery{
+    margin: 5vh auto;
+    max-width: 300px;
+    max-height: 50vh;
+    border-style: solid; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 5px;
+    background-color: white;
+}
+
+.gallery .button{
+    border: solid 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 45%;
+    height: 10%;
+    width: 10%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.forw {
+    right: 0;
+    border-radius: 100% 0% 0% 100%;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0% 100% 100% 0%;
+}
+
+.galleryimg{
+    max-width:100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfoliogrid{
+    display: grid;
+    min-height: 100%;
+grid-template-columns: 50% 50%;
+grid-template-rows: 20vh 20vh 20vh;
+}
+.portfolioobject{
+    border-style: solid;
+    border-radius: 25px;
+    margin: 2%;
+    background-size: cover;
+    background-position: center;
+}
+#pic1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(../img/katt.jpg);
+    background-position: center 30%;
+}
+
+#pic2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url(../img/joker.jpg);
+    background-position: center 25%;
+}
+
+#pic3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background-image: url(../img/portrait.jpg);
+    background-position: center 38%;
+}
+
+#pic4 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-image: url(../img/hand.jpg);
+    background-position: center 30%;
+}
+
+.portfolioimg{
+    max-width: 100%;
+}
+
+.contact {
+    margin: 2%;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    height: 16vh;
+    background-color: white;
+    box-shadow: 0px 2px 10px black;
+}
+.shopgrid{
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22vh 22vh 22vh;
+}
+
+.shopobject{
+    text-align: center;
+    display: block;
+    border-style: solid;
+    height: 20vh;
+    margin: 2%;
+    background-color: white;
+}
+
+.shopobject img{
+    display: block;
+    margin: 10px auto;
+    height: 50%;
+}
+
+.soldout{
+    border-color: black;
+    color: red;
+}
+
+#aboutimg{
+    width: 100%;
+    height: 100px; 
+    object-fit: cover;
+    position: absolute;
+    bottom: 0px;    
 }
