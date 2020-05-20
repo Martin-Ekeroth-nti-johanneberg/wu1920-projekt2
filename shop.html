@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shop</title>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <nav class="navcontainer">
-        <a class="navobject" href="home.html">
+        <a class="navobject" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50" class="ikon"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg>
         </a>
         <a class="navobject" href="about.html">  
@@ -28,20 +28,25 @@
     </nav>
     <header id="shop">
     </header>
-    <divider><h1>SHOP</h1></divider>
-    <div class="shopgrid">
-        <div class="shopobject" id="shop1"><img src="img/Portrait.jpg"> Prints <br>
+    <article class = "divider"><h1>SHOP</h1></article>
+    <center>
+        <br>
+        <button class="knapp" onclick="shopscript('art')">Art</button>
+        <button class="knapp" onclick="shopscript('supplies')">Supplies</button>
+        <br>
+        <div class="shopobject art" id="shop1"><img src="img/Portrait.jpg"> Prints <br>
         50 SEK</div>
-        <div class="shopobject" id="shop2"><img src="img/comissions.jpg"> Comissions<br>
+        <div class="shopobject art" id="shop2"><img src="img/comissions.jpg"> Comissions<br>
             Contact me</div>
-        <div class="shopobject" id="shop3"><img src="img/Pen.jpg"> Pens <br>
+        <div class="shopobject supplies" id="shop3"><img src="img/Pen.jpg"> Pens <br>
             150 SEK</div>
-        <div class="shopobject" id="shop4"><img src="img/Pencil.jpg"> Pencils <br>
+        <div class="shopobject supplies" id="shop4"><img src="img/Pencil.jpg"> Pencils <br>
             250 SEK</div>
-        <div class="shopobject soldout" id="shop5"><img src="img/Brush.jpg"> Brushes <br>
+        <div class="shopobject soldout supplies" id="shop5"><img src="img/Brush.jpg"> Brushes <br>
             Sold Out</div>
-        <div class="shopobject soldout" id="shop6"><img src="img/Colours.jpg"> Colours <br>
+        <div class="shopobject soldout supplies" id="shop6"><img src="img/Colours.jpg"> Colours <br>
             Sold Out</div>
-    </div>  
+    </center>
 </body>
+<script src="script/script.js"></script>
 </html>

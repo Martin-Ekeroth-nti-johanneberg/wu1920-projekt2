@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About</title>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <nav class="navcontainer">
-        <a class="navobject" href="home.html">
+        <a class="navobject" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50" class="ikon"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg>
         </a>
         <a class="navobject active" href="about.html">  
@@ -28,21 +28,19 @@
     </nav>
     <header id="about">
     </header>
-    <divider><h1>ABOUT</h1></divider>
+    <article class = "divider"><h1>ABOUT</h1></article>
     <article class="content">
-        <h1 id="abouttext">
-           Martins life
-        </h1>
+        <nav>
+            <button class="knapp aboutknapp"  onclick="changetext('faq')">Faq</button>
+            <button class="knapp aboutknapp"  onclick="changetext('mylife')">My life</button>
+            <button class="knapp aboutknapp"  onclick="changetext('about')">About</button>
+            <button class="knapp aboutknapp"  onclick="changetext('misc')">Misc</button>
+        </nav>
 
         <p id="abouttext"><br>
-            Our whole universe was in a hot, dense state
-            Then nearly fourteen billion years ago expansion started, wait
-            The earth began to cool, the autotrophs began to drool
-            Neanderthals developed tools
-            We built a wall (we built the pyramids)
-            Math, science, history, unraveling the mysteries
-            That all started with the big bang! Hey! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cum eum enim harum voluptatibus autem iste totam nemo qui, ab dolor nesciunt laborum sint? Nemo repellendus ab excepturi fugiat aut aspernatur minima expedita blanditiis consequatur. Exercitationem vitae iusto vel facere perferendis rerum ea libero fuga praesentium tempora consequatur animi dolorem culpa minus magni enim sunt explicabo, beatae quidem natus quasi eaque nam asperiores? Vel debitis possimus architecto enim. Dolorum quae 
+        Klicka på en av knapparna för att se texten    
         </p>
     </article>
 </body>
+<script src="script/script.js"></script>
 </html>
